@@ -95,3 +95,83 @@ while ( i < 20) {
     i++
 }
 
+// Extras
+// Utiliza la siguiente array para resolver los próximos ejercicios:
+let gente = [
+    {
+      nombre: "Jamiro",
+      edad: 45,
+    },
+    {
+      nombre: "Juan",
+      edad: 35,
+    },
+    {
+      nombre: "Paco",
+      edad: 34,
+    },
+    {
+      nombre: "Pepe",
+      edad: 14,
+    },
+    {
+        nombre: "Pilar",
+        edad: 24,
+      },
+      {
+        nombre: "Laura",
+        edad: 24,
+      },
+      {
+        nombre: "Jenny",
+        edad: 10,
+      },
+    ];
+// Crea un array con la gente cuyo nombre tiene 4 letras sin utilizar el método filter de los arrays y muéstralo por consola.
+let gente4 = []
+for (let index = 0; index < gente.length; index++) {
+    if(gente[index].nombre.charAt(4) != ""){
+        gente4.push(gente[index])
+    }    
+}
+console.log(gente4)
+// Crea un array con la gente cuyo nombre empieza por J y sean menores de 40 años sin utilizar el método filter de los arrays y muéstralo por consola.
+let genteJ = []
+for (let index = 0; index < gente.length; index++) {
+    if(gente[index].nombre.charAt(0) == "J" && gente[index].edad < 40){
+        genteJ.push(gente[index])
+    }    
+}
+console.log(genteJ)
+
+// Crea un objeto en la variable ordenador de tal modo que el siguiente código no muestre por consola 'suspendes':
+let ordenador = {
+  marca: "La pava",
+  tipo: "portátil",
+  perifericos: ["raton", "touchPad"]
+}
+// TEST 1
+      if (typeof ordenador === "object") {
+        console.log("apruebas");
+      } else {
+        console.log("suspendes");
+      }
+      // TEST 2
+      if (ordenador.marca === "La pava") {
+        console.log("apruebas");
+      } else {
+        console.log("suspendes");
+      }
+      // TEST 3
+      if (ordenador.tipo === "portátil") {
+        console.log("apruebas");
+      } else {
+        console.log("suspendes");
+      }
+      // TEST 4
+      if (ordenador.perifericos[1] === "touchPad") {
+        console.log("apruebas");
+      } else {
+        console.log("suspendes");
+      }
+
